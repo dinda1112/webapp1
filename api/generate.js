@@ -41,7 +41,7 @@ if (!text && data.output_text) {
 }
 
     console.log("Full API response:", JSON.stringify(data, null, 2));
-res.status(200).json({ text });
+console.log("Candidate parts:", JSON.stringify(data?.candidates, null, 2));
 
   } catch (error) {
     console.error("Error:", error);
